@@ -1,0 +1,1334 @@
+body{
+    margin: 0;
+    display: none;
+}
+.login-mobile ,
+#mobile-delivery-image ,
+.mobile-search-bar{
+    display: none;
+}
+/* Laptop screen */
+@media (min-width: 1024px) {
+    body{
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        display:flex;
+        flex-direction: column;
+    }
+    .header-first{
+        display: flex;
+        gap: 3vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    #zomato-logo{
+        width: 14vw;
+        height: auto;
+        cursor: pointer;
+    }
+    #input-bar{
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid silver;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px whitesmoke ,
+                    3px -3px 3px whitesmoke;
+        width: 58vw;
+        padding: 15px;
+        outline: none;
+        font-size: 16px;
+        text-align: center;
+    }
+    .zomato-login{
+        display: flex;
+        justify-content: flex-end;
+        gap: 1vw;
+        align-items: center;
+    }
+    .log-links{
+        text-decoration: none;
+        color: gray;
+        font-size: 20px;
+    }
+    .navigation-bar{
+        display: flex;
+        gap: 1vw;
+        align-items: center;
+        color: gray;
+    }
+    .nav-text{
+        text-decoration: none;
+        color: gray;
+    }
+    .nav-text:hover{
+        color: rgb(239, 79, 95);
+    }
+    .header-second{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1vw;
+        border-bottom: 1px solid silver;
+    }
+    .tab-list{
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        font-size: 22px;
+        padding: 1vw;
+        text-decoration: none;
+        color: gray;
+        border-bottom: 2px solid transparent;
+    }
+    .tab-list:hover{
+        border-bottom: 2px solid rgb(239, 79, 95);
+        color: rgb(239, 79, 95);
+    }
+    #delivery-container{
+        border-bottom: 2px solid rgb(239, 79, 95);
+    }
+    #delivery-image{
+        border-radius: 25px;
+        background-color: rgb(252, 238, 192);
+    }
+    #delivery-text{
+        color: rgb(239, 79, 95)
+    }
+    .food-place{
+        width: 40px;
+        height: 40px;
+        padding: 0.5vw;
+    }
+    .food-place:hover{
+        border-radius: 20px;
+        background: rgb(252, 238, 192);
+    }
+    .filter-section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .filter-box{
+        display: flex;
+        align-items: center;
+        padding: 1vw 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .buttons {
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid silver;
+        color: gray;
+        border-radius: 10px;
+        gap: 1vw;
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+    .buttons:hover{
+        background-color: ghostwhite;
+    }
+    #updown{
+        width: 16px;
+        height: 16px;
+    }
+    #filters{
+        display: flex;
+        padding: 1vw;
+    }
+    #one{
+        color: white;
+        padding: 5px 8px;
+        border-radius: 5px;
+        background-color: rgb(239, 79, 95);
+    }
+    #tamatar{
+        display: flex;
+        gap: 1vw;
+        color: white;
+        background-color: rgb(239, 79, 95);
+    }
+    #tamatar:hover{
+        background-color: rgb(243, 67, 84);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-heading{
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 3vw;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        max-width: 28vw;
+        gap: 10px;
+        transition: 0.3s;
+    }
+    .card:hover{
+        border: 1px solid gainsboro;
+        box-shadow: 3px 3px 4px 6px whitesmoke;
+        transform: scale(1.1);
+    }
+    .card-img{
+        position: relative;
+    }
+    .menu-img{
+        width: 100%;
+        height: 19vw;
+        border-radius: 15px;
+    }
+    .promoted{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        color: rgb(255, 255, 255);
+        padding: 2px 5px;
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    .extra-offer{
+        position: absolute;
+        bottom: 45px;
+        background-color: rgb(230, 11, 62);
+        color: white;
+        padding:0 2px;
+    }
+    .offer{
+        position: absolute;
+        bottom: 15px;
+        background-color: rgb(7, 95, 246);
+        color: white;
+        padding: 0 2px;
+    }
+    .time{
+        position: absolute;
+        right: 5px;
+        bottom: 15px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.8);
+        color: rgb(54, 54, 54);
+        padding: 3px;
+    }
+    .card-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .name{
+        white-space: nowrap;
+        overflow: hidden;
+        width: 190px;
+        text-overflow: ellipsis;
+        font-size: 20px;
+        color: #000;
+    }
+    .sub-name{
+        color: gray;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 190px;
+        text-overflow: ellipsis;
+    }
+    .menu-rate{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    .rating{
+        display: flex;
+        background-color: rgb(38, 126, 62);
+        padding: 2px 5px;
+        border-radius: 8px;
+        color: white;
+        gap: 4px;
+        align-items: center;
+        font-weight: bold;
+    }
+    #star{
+        width: 12px;
+        height: 12px;
+    }
+    .prize{
+        color: gray;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    .order-place{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid silver;
+        gap: 5px;
+        padding-top: 10px;
+    }
+    #trending-img{
+        width: 20px;
+        height: auto;
+    }
+    .order-text{
+        color: gray;
+        font-size: 14px;
+    }
+    #safety{
+        width: 60px;
+        height: auto;
+    }
+    .end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        padding: 20px 0 40px 0;
+    }
+    .end-image{
+        width: 150px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        background-color: ghostwhite;
+    }
+    .section-4{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-first{
+        display: flex;
+        justify-content: center;
+        gap: 65vw;
+        align-items: center;
+        padding: 40px 0;
+    }
+    .dropdown{
+        display: flex;
+        gap: 20px;
+    }
+    .dropbtn{
+        background-color: transparent;
+        border: 1px solid silver;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+    #india{
+        align-self: center;
+        width: 20px;
+        height: 20px;
+    }
+    .footer-second{
+        display: flex;
+        justify-content: center;
+        gap: 8vw;
+        padding-bottom: 50px;
+    }
+    .links{
+        color: gray;
+        text-decoration: none;
+    }
+    h3{
+        padding-bottom: 10px;
+        margin: 0;
+        font-size: 16px;
+    }
+    .about ,
+    .zomaverse ,
+    .for-restaurants ,
+    .for-enterprises ,
+    .learn ,
+    .social-link{
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
+    .for{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social-images{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+    .social-img{
+        width: 30px;
+        height: auto;
+    }
+    .store{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .store1{
+        width: 150px;
+        height: auto;
+    }
+    .footer-last{
+        color: gray;
+        text-align: left;
+        line-height: 2vw;
+        word-spacing: 0.5vw;
+        border-top: 1px solid silver;
+        padding: 20px 0 20px 0;
+    }
+    .fixed{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 5px;
+        background-color: rgb(237, 17, 39);
+        border-radius: 50px;
+        border: 1px solid transparent;
+    }
+    #arrow{
+        width: 50px;
+        height: auto;
+    }
+}
+/* Tablet screen */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body{
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-first{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    #zomato-logo{
+        width: 14vw;
+        height: auto;
+        cursor: pointer;
+    }
+    .search-bar{
+        grid-column: 1/span 2;
+        grid-row: 2;
+    }
+    #input-bar{
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid silver;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px whitesmoke ,
+                    3px -3px 3px whitesmoke;
+        width: 83vw;
+        padding: 10px;
+        font-size: 14px;
+        outline: none;
+        text-align: center;
+    }
+    .zomato-login{
+        display: flex;
+        justify-content: flex-end;
+        gap: 3vw;
+        align-items: center;
+    }
+    .log-links{
+        text-decoration: none;
+        color: gray;
+        font-size: 16px;
+    }
+    .navigation-bar{
+        display: flex;
+        gap: 1vw;
+        align-self: start;
+        align-items: center;
+        color: gray;
+    }
+    .nav-text{
+        text-decoration: none;
+        color: gray;
+    }
+    .nav-text:hover{
+        color: rgb(239, 79, 95);
+    }
+    .header-second{
+        display: flex;
+        justify-content: space-between;
+        align-self: start;
+        width: 100%;
+        align-items: center;
+        border-bottom: 1px solid silver;
+    }
+    .tab-list{
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 1vw;
+        text-decoration: none;
+        color: gray;
+        border-bottom: 2px solid transparent;
+    }
+    .tab-list:hover{
+        border-bottom: 2px solid rgb(239, 79, 95);
+        color: rgb(239, 79, 95);
+    }
+    #delivery-container{
+        border-bottom: 2px solid rgb(239, 79, 95);
+    }
+    #delivery-image{
+        border-radius: 25px;
+        background-color: rgb(252, 238, 192);
+    }
+    #delivery-text{
+        color: rgb(239, 79, 95)
+    }
+    .food-place{
+        width: 50px;
+        height: 50px;
+        padding: 1vw;
+    }
+    .food-place:hover{
+        border-radius: 25px;
+        background: rgb(252, 238, 192);
+    }
+    .filter-section{
+        width: 100%;
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .filter-box{
+        display: flex;
+        justify-content: space-between;
+        padding: 3vw 0;
+        gap: 1vw;
+    }
+    .buttons {
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid silver;
+        color: gray;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        /* text-align: center; */
+        padding: 10px 10px;
+        gap: 1vw;
+    }
+    .buttons:hover{
+        background-color: ghostwhite;
+    }
+    #updown{
+        align-self: center;
+        width: 14px;
+        height: 14px;
+    }
+    #filters{
+        display: flex;
+        gap: 1vw;
+        padding: 1vw;
+    }
+    #one{
+        color: white;
+        padding: 2px 4px;
+        border-radius: 4px;
+        background-color: rgb(239, 79, 95);
+    }
+    #tamatar{
+        display: flex;
+        gap: 1vw;
+        color: white;
+        background-color: rgb(239, 79, 95);
+    }
+    #tamatar:hover{
+        background-color: rgb(237, 17, 39);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-heading{
+        padding-bottom: 3vw;
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 3vw;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        max-width: 27vw;
+        gap: 5px;
+        transition: 0.3s;
+    }
+    .card:hover{
+        border: 1px solid gainsboro;
+        box-shadow: 3px 3px 4px 6px whitesmoke;
+        transform: scale(1.1);
+    }
+    .card-img{
+        position: relative;
+    }
+    .menu-img{
+        object-fit: cover;
+        width: 100%;
+        height: 19vw;
+        border-radius: 15px;
+    }
+    .promoted{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        padding: 2px 4px;
+        font-size: 10px;
+        opacity: 0.5;
+    }
+    .extra-offer{
+        position: absolute;
+        bottom: 45px;
+        background-color: rgb(230, 11, 62);
+        color: white;
+        padding:0 2px;
+    }
+    .offer{
+        position: absolute;
+        bottom: 15px;
+        background-color: rgb(7, 95, 246);
+        color: white;
+        padding: 0 2px;
+    }
+    .time{
+        position: absolute;
+        right: 5px;
+        bottom: 15px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.8);
+        color: rgb(54, 54, 54);
+        padding: 2px;
+    }
+    .card-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .name{
+        white-space: nowrap;
+        overflow: hidden;
+        width: 140px;
+        text-overflow: ellipsis;
+        font-size: 18px;
+        color: #000;
+    }
+    .sub-name{
+        color: gray;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 120px;
+        text-overflow: ellipsis;
+    }
+    .menu-rate{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    .rating{
+        display: flex;
+        background-color: rgb(38, 126, 62);
+        padding: 2px 5px;
+        border-radius: 8px;
+        color: white;
+        gap: 4px;
+        align-items: center;
+        font-weight: 600;
+    }
+    #star{
+        width: 12px;
+        height: 12px;
+    }
+    .prize{
+        color: gray;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 62px;
+        text-overflow: ellipsis;
+    }
+    .order-place{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid silver;
+        gap: 5px;
+        padding-top: 1vw;
+    }
+    #trending-img{
+        width: 20px;
+        height: auto;
+    }
+    .order-text{
+        font-size: 11px;
+        color: gray;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #safety{
+        width: 6vw;
+        height: auto;
+    }
+    .end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        padding: 3vw 0 2vw 0;
+    }
+    .end-image{
+        width: 15vw;
+    }
+    .end-text{
+        font-size: 3vw;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        padding: 3vw 0;
+        background-color: ghostwhite;
+    }
+    .section-4{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-first{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .dropdown{
+        display: flex;
+        gap: 20px;
+    }
+    .dropbtn{
+        background-color: transparent;
+        border: 1px solid silver;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+    #india{
+        align-self: center;
+        width: 20px;
+        height: 20px;
+    }
+    .footer-second{
+        display: flex;
+        justify-content: center;
+        font-size: 2vw;
+        gap: 8vw;
+    }
+    .links{
+        color: gray;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    h3{
+        margin: 0;
+        font-size: 15px;
+    }
+    .about ,
+    .zomaverse ,
+    .for-restaurants ,
+    .for-enterprises ,
+    .learn ,
+    .social-link{
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
+    .for{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .social-images{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    .social-img{
+        width: 3vw;
+        height: auto;
+    }
+    .store{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .store1{
+        width: 150px;
+        height: auto;
+    }
+    .footer-last{
+        color: gray;
+        text-align: left;
+        line-height: 2vw;
+        word-spacing: 0.5vw;
+        border-top: 1px solid silver;
+        padding: 2vw 0 2vw 0;
+    }
+    .fixed{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 5px;
+        border-radius: 50px;
+        border: 1px solid transparent;
+        background-color: rgb(237, 17, 39);
+    }
+    #arrow{
+        width: 45px;
+        height: auto;
+    }
+}
+/* Mobile-screen */
+@media (max-width: 768px) {
+    body{
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    .search-bar ,
+    .zomato-login ,
+    .navigation-bar ,
+    .food-place ,
+    .fixed,
+    #night-life{
+        display: none;
+    }
+    .login-mobile ,
+    #mobile-delivery-image,
+    .mobile-search-bar{
+        display: block;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .header-first{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding-top: 16px;box-shadow: rgb(0 0 0 / 20%) 0px 8px 6px -6px;
+        padding-bottom: 10px;
+        align-items: center;
+        z-index: 2;
+        gap: 25vw;
+    }
+    #zomato-logo{
+        width: 25vw;
+        height: auto;
+        cursor: pointer;
+    }
+    #input-bar{
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid silver;
+        border-radius: 25px;
+        box-shadow: 3px 3px 3px whitesmoke, 3px -3px 3px whitesmoke;
+        width: 84vw;
+        padding: 10px;
+        font-size: 14px;
+        outline: none;
+        text-align: center;
+    }
+    .login-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2vw;
+    }
+    .use-app{
+        font-weight: 700;
+        font-size: 14px;
+        color: white;
+        border: 1px solid transparent;
+        background: rgb(226, 55, 68);
+        box-shadow: rgb(28 28 28 / 8%) 0px 1px 8px;
+        padding: 1vw 2vw;
+        line-height: 23px;
+        border-radius: 16px;
+    }
+    .mobile-login-img{
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 50%;
+        align-items: center;
+        padding: 1vw;
+        background-color: transparent;
+    }
+    #login-img{
+        height: 18px;
+        width: 20px;
+        align-self: center;
+    }
+    .header-second{
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+        z-index: 1;
+        width: 100%;
+        align-items: center;
+        display: flex;
+    }
+    .tab-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        width: 100%;
+        padding: 2vw;
+        text-decoration: none;
+        color: gray;
+        border-top: 2px solid transparent;
+    }
+    .tab-list:hover{
+        border-top: 2px solid rgb(239, 79, 95);
+        color: #000;
+    }
+    #delivery-container{
+        border-top: 2px solid rgb(239, 79, 95);
+        color: #000;
+    }
+    .filter-section{
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+        padding-top: 4vw;
+    }
+    .mobile-search-bar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .filter-box{
+        display: -webkit-inline-box;
+        width: 100%;
+        gap: 2vw;
+        overflow: scroll;
+        overflow-y: hidden;
+        padding: 0 2vw;
+        box-sizing: border-box;
+        padding-bottom: 5vw;
+    }
+    .filter-box::-webkit-scrollbar {
+        display: none;
+    }
+    .filter-box {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .buttons {
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid silver;
+        color: gray;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 1vw 2vw;
+    }
+    .buttons:hover{
+        background-color: ghostwhite;
+    }
+    #updown{
+        align-self: center;
+        width: 14px;
+        height: 14px;
+    }
+    #filters{
+        display: flex;
+        gap: 1vw;
+    }
+    #one{
+        color: white;
+        padding: 2px 4px;
+        border-radius: 4px;
+        background-color: rgb(239, 79, 95);
+    }
+    #tamatar{
+        display: flex;
+        gap: 2vw;
+        color: white;
+        background-color: rgb(239, 79, 95);
+    }
+    #tamatar:hover{
+        background-color: rgb(237, 17, 39);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container-heading{
+        padding-bottom: 3vw;
+        font-size: 4vw;
+        text-align: center;
+        width: 100%;
+        font-weight: 600;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        width: 100%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        max-width: 92vw;
+        gap: 5px;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .card:hover{
+        border: 1px solid gainsboro;
+        box-shadow: 3px 3px 4px 6px whitesmoke;
+        transform: scale(0.9);
+    }
+    .card-img{
+        position: relative;
+    }
+    .menu-img{
+        object-fit: cover;
+        width: 100%;
+        height: 22vh;
+        border-radius: 15px 15px 0 0;
+    }
+    .promoted{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        padding: 2px 4px;
+        font-size: 10px;
+        opacity: 0.5;
+    }
+    .extra-offer{
+        position: absolute;
+        bottom: 40px;
+        background-color: rgb(230, 11, 62);
+        color: white;
+        padding:0 4px;
+    }
+    .offer{
+        position: absolute;
+        bottom: 15px;
+        background-color: rgb(7, 95, 246);
+        color: white;
+        padding: 0 4px;
+    }
+    .time{
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.8);
+        color: rgb(54, 54, 54);
+        padding: 2px;
+    }
+    .card-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .name{
+        white-space: nowrap;
+        overflow: hidden;
+        width: 51vw;
+        text-overflow: ellipsis;
+        font-size: 20px;
+        color: #000;
+    }
+    .sub-name{
+        color: gray;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 51vw;
+        text-overflow: ellipsis;
+    }
+    .menu-rate{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    .rating{
+        display: flex;
+        background-color: rgb(38, 126, 62);
+        padding: 3px 6px;
+        border-radius: 5px;
+        color: white;
+        align-items: center;
+        font-weight: 600;
+    }
+    #star{
+        width: 12px;
+        height: 12px;
+    }
+    .prize{
+        color: gray;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .order-place{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid silver;
+        padding-top: 2vw;
+    }
+    #trending-img{
+        width: 22px;
+        height: auto;
+    }
+    .order-text{
+        color: gray;
+        width: 100%;
+        padding: 0 2vw;
+        text-align: start;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #safety{
+        width: 12vw;
+        height: auto;
+    }
+    .end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+        padding: 3vw 0 3vw 0;
+    }
+    .end-image{
+        width: 11vw;
+        height: auto;
+    }
+    .end-text{
+        font-size: 3vw;
+    }
+    .footer{
+        width: 100%;
+        gap: 3vw;
+        padding: 3vw 0;
+        background-color: ghostwhite;
+    }
+    .footer-first{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    #mobile-zomato-logo{
+        padding: 3vw;
+    }
+    .dropdown{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 3vw;
+        gap: 20px;
+    }
+    .dropbtn{
+        background-color: transparent;
+        border: 1px solid silver;
+        border-radius: 5px;
+        padding: 4px 8px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+    #india{
+        align-self: center;
+        width: 20px;
+        height: 20px;
+    }
+    .footer-second{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 2vw;
+        padding: 5vw 0;
+        gap: 4vw;
+    }
+    .links{
+        color: gray;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    h3{
+        margin: 0;
+        font-size: 15px;
+    }
+    .about ,
+    .zomaverse ,
+    .for-restaurants ,
+    .for-enterprises ,
+    .learn ,
+    .social-link{
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
+    .for{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .social-link > h3{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .social-images{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        cursor: pointer;
+    }
+    .social-img{
+        width: 8vw;
+        height: auto;
+    }
+    .store{
+        padding: 2vw 0;
+        display: flex;
+        gap: 8vw;
+        cursor: pointer;
+    }
+    .store1{
+        width: 130px;
+        height: auto;
+    }
+    .footer-last{
+        color: gray;
+        text-align: left;
+        border-top: 1px solid silver;
+        padding: 2vw 0 16vw 0;
+    }
+    .fixed{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 5px;
+        border-radius: 50px;
+        border: 1px solid transparent;
+        background-color: rgb(237, 17, 39);
+    }
+    #arrow{
+        width: 45px;
+        height: auto;
+    }
+}
