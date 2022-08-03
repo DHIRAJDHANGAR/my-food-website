@@ -1,615 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="zomato.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <title>ZOMATO</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="section">
-        <div class="header">
-            <div class="header-first">
-                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" title="Zomato" id="zomato-logo">
-                <div class="search-bar">
-                    <input type="text" id="input-bar" placeholder="Search for restaurant,cuisine or a dish">
-                </div>
-                <div class="zomato-login">
-                    <a href="#" class="log-links">Log in</a>
-                    <a href="#" class="log-links">Sign up</a>
-                </div>
-                <div class="login-mobile">
-                    <button class="use-app">Use App</button>
-                    <button class="mobile-login-img">
-                        <img src="image/login-img.svg" id="login-img">
-                    </button>
-                </div>
-            </div>
-            <div class="navigation-bar">
-                <a href="#" class="nav-text">Home</a>
-                <span>/</span>
-                <a href="#" class="nav-text">India</a>
-                <span>/</span>
-                <a href="#" class="nav-text">Mumbai</a>
-                <span>/</span>
-                <a href="#" class="nav-text">Sev Tamatar Restaurants</a>
-            </div>
-            <div class="header-second">
-                <a href="#" class="tab-list" id="delivery-container">
-                    <img src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
-                    class="food-place" id="delivery-image">
-                    <img src="image/delivery-img.svg" id="mobile-delivery-image">
-                    <div class="foot-text" id="delivery-text">Delivery</div>
-                </a>
-                <a href="#" class="tab-list">
-                    <img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png" class="food-place">
-                    <img src="image/dinning-img.svg" alt="" id="mobile-delivery-image">
-                    <div class="foot-text">Dining Out</div>
-                </a>
-                <a href="#" class="tab-list" id="night-life">
-                    <img src="https://b.zmtcdn.com/data/o2_assets/855687dc64a5e06d737dae45b7f6a13b1616149818.png" class="food-place">
-                    <div class="foot-text">Nightlife</div>
-                </a>
-            </div>
+      <div class="header">
+        <div class="header-first">
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+            title="Zomato"
+            id="zomato-logo"
+          />
+          <div class="search-bar">
+            <input
+              type="text"
+              id="input-bar"
+              placeholder="Search for restaurant,cuisine or a dish"
+            />
+          </div>
+          <div class="zomato-login">
+            <a href="#" class="log-links">Log in</a>
+            <a href="#" class="log-links">Sign up</a>
+          </div>
+          <div class="login-mobile">
+            <button class="use-app">Use App</button>
+            <button class="mobile-login-img">
+              <img src="image/login-img.svg" id="login-img" />
+            </button>
+          </div>
         </div>
-        <div class="filter-section">
-            <div class="mobile-search-bar">
-                <input type="text" id="input-bar" placeholder="Search for restaurant,cuisine or a dish">
-            </div>
-            <div class="filter-box">
-                <button id="filters" class="buttons">
-                    <div id="one">1</div>
-                    <div>Filters</div>
-                </button>
-                <button class="buttons" id="tamatar">
-                    Sev Tamatar <div title="close">X</div>
-                </button>
-                <button class="buttons">
-                    <div>
-                        <img src="image/updown.svg" id="updown">
-                    </div>
-                Delivery Time</button>
-                <button class="buttons">Rating: 4.0+</button>
-                <button class="buttons">Pure Veg</button>
-                <button class="buttons">Cuisines
-                    <div>
-                        <img src="image/down.svg" id="updown">
-                    </div>
-                    </button>
-                <button class="buttons">More filters
-                    <div>
-                        <img src="image/down.svg" id="updown">
-                    </div>
-                    </button>
-            </div>
+        <div class="navigation-bar">
+          <a href="#" class="nav-text">Home</a>
+          <span>/</span>
+          <a href="#" class="nav-text">India</a>
+          <span>/</span>
+          <a href="#" class="nav-text">Mumbai</a>
+          <span>/</span>
+          <a href="#" class="nav-text">Sev Tamatar Restaurants</a>
         </div>
-        <div class="container">
-            <div class="container-heading">
-                Delivery Restaurants in Mumbai
+        <div class="header-second">
+          <a href="#" class="tab-list" id="delivery-container">
+            <img
+              src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
+              class="food-place"
+              id="delivery-image"
+            />
+            <img src="image/delivery-img.svg" id="mobile-delivery-image" />
+            <div class="foot-text" id="delivery-text">Delivery</div>
+          </a>
+          <a href="#" class="tab-list">
+            <img
+              src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png"
+              class="food-place"
+            />
+            <img
+              src="image/dinning-img.svg"
+              alt=""
+              id="mobile-delivery-image"
+            />
+            <div class="foot-text">Dining Out</div>
+          </a>
+          <a href="#" class="tab-list" id="night-life">
+            <img
+              src="https://b.zmtcdn.com/data/o2_assets/855687dc64a5e06d737dae45b7f6a13b1616149818.png"
+              class="food-place"
+            />
+            <div class="foot-text">Nightlife</div>
+          </a>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="mobile-search-bar">
+          <input
+            type="text"
+            id="input-bar"
+            placeholder="Search for restaurant,cuisine or a dish"
+          />
+        </div>
+        <div class="filter-box">
+          <button id="filters" class="buttons">
+            <div id="one">1</div>
+            <div>Filters</div>
+          </button>
+          <button class="buttons" id="tamatar">
+            Sev Tamatar
+            <div title="close">X</div>
+          </button>
+          <button class="buttons">
+            <div>
+              <img src="image/updown.svg" id="updown" />
             </div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/dish_photos/52b/f88283e06c77b0e4af1d76e559a6e52b.jpg?output-format=webp" class="menu-img">
-                        <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 10% OFF
-                        </div>
-                        <div class="offer">50% OFF</div>
-                        <div class="time">37 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">Maa Ki Rasoi</div>
-                            <div class="sub-name">North Indian, Chinese</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">4.0
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹350 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            29075+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
+            Delivery Time
+          </button>
+          <button class="buttons">Rating: 4.0+</button>
+          <button class="buttons">Pure Veg</button>
+          <button class="buttons">
+            Cuisines
+            <div>
+              <img src="image/down.svg" id="updown" />
+            </div>
+          </button>
+          <button class="buttons">
+            More filters
+            <div>
+              <img src="image/down.svg" id="updown" />
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-heading">Delivery Restaurants in Mumbai</div>
+        <div class="grid">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/dish_photos/52b/f88283e06c77b0e4af1d76e559a6e52b.jpg?output-format=webp"
+                class="menu-img"
+              />
+              <div class="promoted">Promoted</div>
+              <div class="extra-offer">Pro extra 10% OFF</div>
+              <div class="offer">50% OFF</div>
+              <div class="time">37 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">Maa Ki Rasoi</div>
+                <div class="sub-name">North Indian, Chinese</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  4.0
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/pictures/chains/0/18478460/d7e8dd8e5b613af08460d690734f3213_o2_featured_v2.jpg?output-format=webp" class="menu-img">
-                        <!-- <div class="promoted">Promoted</div> -->
-                        <!-- <div class="extra-offer">
+                <div class="prize">₹350 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                29075+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/chains/0/18478460/d7e8dd8e5b613af08460d690734f3213_o2_featured_v2.jpg?output-format=webp"
+                class="menu-img"
+              />
+              <!-- <div class="promoted">Promoted</div> -->
+              <!-- <div class="extra-offer">
                             Pro extra 60% OFF
                         </div> -->
-                        <div class="offer">10% OFF</div>
-                        <div class="time">35 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">99 Rotiwala</div>
-                            <div class="sub-name">North Indian, Chinese</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">3.8
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹350 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            4520+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
+              <div class="offer">10% OFF</div>
+              <div class="time">35 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">99 Rotiwala</div>
+                <div class="sub-name">North Indian, Chinese</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  3.8
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/dish_photos/611/43a98f22573cb56d9efc6cba41eb9611.jpg?output-format=webp" class="menu-img">
-                        <div class="promoted">Promoted</div>
-                        <!-- <div class="extra-offer">
+                <div class="prize">₹350 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                4520+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/dish_photos/611/43a98f22573cb56d9efc6cba41eb9611.jpg?output-format=webp"
+                class="menu-img"
+              />
+              <div class="promoted">Promoted</div>
+              <!-- <div class="extra-offer">
                             Pro extra 60% OFF
                         </div> -->
-                        <div class="offer">60% OFF</div>
-                        <div class="time">47 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">Hotel Zakir</div>
-                            <div class="sub-name">North Indian, Chinese</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">3.9
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹450 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            10975+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
+              <div class="offer">60% OFF</div>
+              <div class="time">47 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">Hotel Zakir</div>
+                <div class="sub-name">North Indian, Chinese</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  3.9
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/dish_photos/cc2/0ef9765a46991a125cd8a33332aa4cc2.jpg" class="menu-img">
-                        <!-- <div class="promoted">Promoted</div> -->
-                        <!-- <div class="extra-offer">
+                <div class="prize">₹450 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                10975+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/dish_photos/cc2/0ef9765a46991a125cd8a33332aa4cc2.jpg"
+                class="menu-img"
+              />
+              <!-- <div class="promoted">Promoted</div> -->
+              <!-- <div class="extra-offer">
                             Pro extra 20% OFF
                         </div> -->
-                        <div class="offer">60% OFF</div>
-                        <div class="time">29 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">Oye24</div>
-                            <div class="sub-name">North Indian, Chinese</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">3.9
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹300 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            11725+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/pictures/5/19189765/bf0aecaf94675828985097c8fffeb304_o2_featured_v2.jpg" class="menu-img">
-                        <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 25% OFF
-                        </div>
-                        <div class="offer">50% OFF</div>
-                        <div class="time">34 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">AM PM</div>
-                            <div class="sub-name">North Indian, Chinese</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">3.5
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹300 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            2300+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/dish_photos/172/e9054aba17b4422aaa881f34755c4172.jpg" class="menu-img">
-                        <!-- <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 10% OFF
-                        </div> -->
-                        <div class="offer">30% OFF</div>
-                        <div class="time">44 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">Gyan Ji Ka Khalsa Dhaba</div>
-                            <div class="sub-name">North Indian, Chinese</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">4.1
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹300 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            2650+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/dish_photos/712/4182a9dcb1c5d79f654dc07c8f6cb712.jpg" class="menu-img">
-                        <!-- <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 10% OFF
-                        </div> -->
-                        <div class="offer">60% OFF</div>
-                        <div class="time">31 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">Apna Sweets</div>
-                            <div class="sub-name">Mithai, Street Food, South</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">4.0
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹300 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            4550+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/pictures/1/18976721/51f729996934bb3aea857e30bd14be4b_o2_featured_v2.jpg" class="menu-img">
-                        <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 10% OFF
-                        </div>
-                        <div class="offer">30% OFF</div>
-                        <div class="time">37 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">The Second Wife</div>
-                            <div class="sub-name">North Indian</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">3.6
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹300 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            1275+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/pictures/1/20035791/6b49ab9053a87789e674769b88d6e4db_o2_featured_v2.jpg" class="menu-img">
-                        <!-- <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 10% OFF
-                        </div> -->
-                        <div class="offer">60% OFF</div>
-                        <div class="time">40 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">Lakhdatar Restaurant</div>
-                            <div class="sub-name">North Indian</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">3.2
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹300 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            895+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/pictures/8/19661168/896b0374af604bf56c6108bc6392246f_o2_featured_v2.jpg" class="menu-img">
-                        <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 30% OFF
-                        </div>
-                        <div class="offer">40% OFF</div>
-                        <div class="time">41 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">Shree Shyam Rasoi</div>
-                            <div class="sub-name">North Indian</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">3.3
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹300 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            1045+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/pictures/8/1401918/3fae203decf490767153cfb8da23c18b_o2_featured_v2.jpg" class="menu-img">
-                        <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 15% OFF
-                        </div>
-                        <div class="offer">60% OFF</div>
-                        <div class="time">39 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">Chill Baby</div>
-                            <div class="sub-name">Beverages, Sandwich, Pizza</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">3.7
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹200 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            2000+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://b.zmtcdn.com/data/pictures/6/20078946/c32aab8ddd2daec021ba17ec25194f8a_o2_featured_v2.jpg?output-format=webp" class="menu-img">
-                        <!-- <div class="promoted">Promoted</div>
-                        <div class="extra-offer">
-                            Pro extra 10% OFF
-                        </div> -->
-                        <div class="offer">50% OFF</div>
-                        <div class="time">35 min</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="menu-title">
-                            <div class="name">The Shaolin Street</div>
-                            <div class="sub-name">Chinese, North Indian</div>
-                        </div>
-                        <div class="menu-rate">
-                            <div class="rating">4.0
-                                <div>
-                                    <img src="image/star.svg" id="star">
-                                </div>
-                            </div>
-                            <div class="prize">₹150 for one</div>
-                        </div>
-                    </div>
-                    <div class="order-place">
-                        <div class="trending">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" id="trending-img">
-                        </div>
-                        <div class="order-text">
-                            975+ orders placed from here recently
-                        </div>
-                        <div class="max-safety">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" id="safety">
-                        </div>
-                    </div>
-                </div>
+              <div class="offer">60% OFF</div>
+              <div class="time">29 min</div>
             </div>
-            <div class="end">
-                <h1 class="end-text">End of search results</h1> 
-                <div>
-                    <img src="https://b.zmtcdn.com/web/assets/search/6d548ba48f0e4e4b46c19ad4b15a3f011615379209.jpeg" class="end-image">
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">Oye24</div>
+                <div class="sub-name">North Indian, Chinese</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  3.9
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
                 </div>
+                <div class="prize">₹300 for one</div>
+              </div>
             </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                11725+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/5/19189765/bf0aecaf94675828985097c8fffeb304_o2_featured_v2.jpg"
+                class="menu-img"
+              />
+              <div class="promoted">Promoted</div>
+              <div class="extra-offer">Pro extra 25% OFF</div>
+              <div class="offer">50% OFF</div>
+              <div class="time">34 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">AM PM</div>
+                <div class="sub-name">North Indian, Chinese</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  3.5
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
+                </div>
+                <div class="prize">₹300 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                2300+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/dish_photos/172/e9054aba17b4422aaa881f34755c4172.jpg"
+                class="menu-img"
+              />
+              <!-- <div class="promoted">Promoted</div>
+                        <div class="extra-offer">
+                            Pro extra 10% OFF
+                        </div> -->
+              <div class="offer">30% OFF</div>
+              <div class="time">44 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">Gyan Ji Ka Khalsa Dhaba</div>
+                <div class="sub-name">North Indian, Chinese</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  4.1
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
+                </div>
+                <div class="prize">₹300 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                2650+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/dish_photos/712/4182a9dcb1c5d79f654dc07c8f6cb712.jpg"
+                class="menu-img"
+              />
+              <!-- <div class="promoted">Promoted</div>
+                        <div class="extra-offer">
+                            Pro extra 10% OFF
+                        </div> -->
+              <div class="offer">60% OFF</div>
+              <div class="time">31 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">Apna Sweets</div>
+                <div class="sub-name">Mithai, Street Food, South</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  4.0
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
+                </div>
+                <div class="prize">₹300 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                4550+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/1/18976721/51f729996934bb3aea857e30bd14be4b_o2_featured_v2.jpg"
+                class="menu-img"
+              />
+              <div class="promoted">Promoted</div>
+              <div class="extra-offer">Pro extra 10% OFF</div>
+              <div class="offer">30% OFF</div>
+              <div class="time">37 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">The Second Wife</div>
+                <div class="sub-name">North Indian</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  3.6
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
+                </div>
+                <div class="prize">₹300 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                1275+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/1/20035791/6b49ab9053a87789e674769b88d6e4db_o2_featured_v2.jpg"
+                class="menu-img"
+              />
+              <!-- <div class="promoted">Promoted</div>
+                        <div class="extra-offer">
+                            Pro extra 10% OFF
+                        </div> -->
+              <div class="offer">60% OFF</div>
+              <div class="time">40 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">Lakhdatar Restaurant</div>
+                <div class="sub-name">North Indian</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  3.2
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
+                </div>
+                <div class="prize">₹300 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                895+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/8/19661168/896b0374af604bf56c6108bc6392246f_o2_featured_v2.jpg"
+                class="menu-img"
+              />
+              <div class="promoted">Promoted</div>
+              <div class="extra-offer">Pro extra 30% OFF</div>
+              <div class="offer">40% OFF</div>
+              <div class="time">41 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">Shree Shyam Rasoi</div>
+                <div class="sub-name">North Indian</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  3.3
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
+                </div>
+                <div class="prize">₹300 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                1045+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/8/1401918/3fae203decf490767153cfb8da23c18b_o2_featured_v2.jpg"
+                class="menu-img"
+              />
+              <div class="promoted">Promoted</div>
+              <div class="extra-offer">Pro extra 15% OFF</div>
+              <div class="offer">60% OFF</div>
+              <div class="time">39 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">Chill Baby</div>
+                <div class="sub-name">Beverages, Sandwich, Pizza</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  3.7
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
+                </div>
+                <div class="prize">₹200 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                2000+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/6/20078946/c32aab8ddd2daec021ba17ec25194f8a_o2_featured_v2.jpg?output-format=webp"
+                class="menu-img"
+              />
+              <!-- <div class="promoted">Promoted</div>
+                        <div class="extra-offer">
+                            Pro extra 10% OFF
+                        </div> -->
+              <div class="offer">50% OFF</div>
+              <div class="time">35 min</div>
+            </div>
+            <div class="card-details">
+              <div class="menu-title">
+                <div class="name">The Shaolin Street</div>
+                <div class="sub-name">Chinese, North Indian</div>
+              </div>
+              <div class="menu-rate">
+                <div class="rating">
+                  4.0
+                  <div>
+                    <img src="image/star.svg" id="star" />
+                  </div>
+                </div>
+                <div class="prize">₹150 for one</div>
+              </div>
+            </div>
+            <div class="order-place">
+              <div class="trending">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                  id="trending-img"
+                />
+              </div>
+              <div class="order-text">
+                975+ orders placed from here recently
+              </div>
+              <div class="max-safety">
+                <img
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                  id="safety"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer">
-            <div class="footer-first">
-                <div id="mobile-zomato-logo"><img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" id="zomato-logo"  title="Zomato"></div>
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        <img src="image/india.svg" id="india">
-                        <div>India</div> </button>
-                    <button class="dropbtn">
-                        <img src="image/world.svg" id="india">
-                        <div>English</div> </button>
-                </div>
-            </div>
-            <div class="footer-second">
-                <div class="about">
-                    <h3>ABOUT ZOMATO</h3>
-                    <a href="" class="links">Who We Are</a>
-                    <a href="" class="links">Blog</a>
-                    <a href="" class="links">Work With Us</a>
-                    <a href="" class="links">Investor Relations</a>
-                    <a href="" class="links">Report Fraud</a>
-                </div>
-                <div class="zomaverse">
-                    <h3>ZOMAVERSE</h3>
-                    <a href="" class="links">Zomato</a>
-                    <a href="" class="links">Feeding India</a>
-                    <a href="" class="links">Hyperpure</a>
-                    <a href="" class="links">Zomaland</a>
-                </div>
-                <div class="for">
-                    <div class="for-restaurants">
-                        <h3>FOR RESTAURANTS</h3>
-                        <a href="" class="links">Partner With Us</a>
-                        <a href="" class="links">Apps For You</a>
-                    </div>
-                    <div class="for-enterprises">
-                        <h3>FOR ENTERPRISES</h3>
-                        <a href="" class="links">Zomato For Work</a>
-                    </div>
-                </div>
-                <div class="learn">
-                    <h3>LEARN MORE</h3>
-                    <a href="" class="links">Privacy</a>
-                    <a href="" class="links">Security</a>
-                    <a href="" class="links">Terms</a>
-                    <a href="" class="links">Sitemap</a>
-                </div>
-                <div class="social-link">
-                    <h3>SOCIAL LINKS</h3>
-                    <div class="social-images">
-                        <img src="image/linkdn.svg" class="social-img">
-                        <img src="image/insta.svg" class="social-img" >
-                        <img src="image/twit.svg" class="social-img" >
-                        <img src="image/yt.svg" class="social-img" >
-                        <img src="image/fb.svg" class="social-img" >
-                    </div>
-                    <div class="store">
-                        <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" class="store1">
-                        <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" class="store1">
-                    </div>
-                </div>
-            </div>
-            <div class="footer-last">
-                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.
-            </div>
+        <div class="end">
+          <h1 class="end-text">End of search results</h1>
+          <div>
+            <img
+              src="https://b.zmtcdn.com/web/assets/search/6d548ba48f0e4e4b46c19ad4b15a3f011615379209.jpeg"
+              class="end-image"
+            />
+          </div>
         </div>
-        <button class="fixed">
-            <a href="#"><img src="image/up.svg" alt="" id="arrow"></a>
-        </button>
+      </div>
+      <div class="footer">
+        <div class="footer-first">
+          <div id="mobile-zomato-logo">
+            <img
+              src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+              id="zomato-logo"
+              title="Zomato"
+            />
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img src="image/india.svg" id="india" />
+              <div>India</div>
+            </button>
+            <button class="dropbtn">
+              <img src="image/world.svg" id="india" />
+              <div>English</div>
+            </button>
+          </div>
+        </div>
+        <div class="footer-second">
+          <div class="about">
+            <h3>ABOUT ZOMATO</h3>
+            <a href="" class="links">Who We Are</a>
+            <a href="" class="links">Blog</a>
+            <a href="" class="links">Work With Us</a>
+            <a href="" class="links">Investor Relations</a>
+            <a href="" class="links">Report Fraud</a>
+          </div>
+          <div class="zomaverse">
+            <h3>ZOMAVERSE</h3>
+            <a href="" class="links">Zomato</a>
+            <a href="" class="links">Feeding India</a>
+            <a href="" class="links">Hyperpure</a>
+            <a href="" class="links">Zomaland</a>
+          </div>
+          <div class="for">
+            <div class="for-restaurants">
+              <h3>FOR RESTAURANTS</h3>
+              <a href="" class="links">Partner With Us</a>
+              <a href="" class="links">Apps For You</a>
+            </div>
+            <div class="for-enterprises">
+              <h3>FOR ENTERPRISES</h3>
+              <a href="" class="links">Zomato For Work</a>
+            </div>
+          </div>
+          <div class="learn">
+            <h3>LEARN MORE</h3>
+            <a href="" class="links">Privacy</a>
+            <a href="" class="links">Security</a>
+            <a href="" class="links">Terms</a>
+            <a href="" class="links">Sitemap</a>
+          </div>
+          <div class="social-link">
+            <h3>SOCIAL LINKS</h3>
+            <div class="social-images">
+              <img src="image/linkdn.svg" class="social-img" />
+              <img src="image/insta.svg" class="social-img" />
+              <img src="image/twit.svg" class="social-img" />
+              <img src="image/yt.svg" class="social-img" />
+              <img src="image/fb.svg" class="social-img" />
+            </div>
+            <div class="store">
+              <img
+                src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                class="store1"
+              />
+              <img
+                src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                class="store1"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-last">
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2022 © Zomato™ Ltd. All
+          rights reserved.
+        </div>
+      </div>
+      <button class="fixed">
+        <a href="#"><img src="image/up.svg" alt="" id="arrow" /></a>
+      </button>
     </div>
-</body>
+  </body>
 </html>
