@@ -1,4 +1,4 @@
-## clone zomato
+## inspired from zomato
 
 A responsive UI of Zomato which includes different types of products and their descriptions by using only HTML and CSS.
 
